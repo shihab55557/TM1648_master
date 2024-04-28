@@ -1,0 +1,212 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: shihab mohammad, na, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+E:\Desk\project_work\TM_sensor\stm32g0_as_master\stm32g030_master.uvprojx
+Project File Date:  04/27/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(2): warning: In file included from...
+./serial.h(12): warning: no newline at end of file [-Wnewline-eof]
+   12 | void    uart_send_num_float(float num);
+      |                                        ^
+main.c(3): warning: In file included from...
+./adc.h(6): warning: no previous prototype for function 'adc_enable_vreg' [-Wmissing-prototypes]
+    6 | void adc_enable_vreg(void){
+      |      ^
+./adc.h(6): note: declare 'static' if the function is not intended to be used outside of this translation unit
+    6 | void adc_enable_vreg(void){
+      | ^
+      | static 
+./adc.h(18): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   18 | void adc_init(){
+      |              ^
+      |               void
+./adc.h(68): warning: no previous prototype for function 'adc_read' [-Wmissing-prototypes]
+   68 | uint16_t adc_read(uint8_t channel){
+      |          ^
+./adc.h(68): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   68 | uint16_t adc_read(uint8_t channel){
+      | ^
+      | static 
+./adc.h(83): warning: no previous prototype for function 'adc_read_filtered' [-Wmissing-prototypes]
+   83 | uint16_t adc_read_filtered(uint8_t channel){
+      |          ^
+./adc.h(83): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   83 | uint16_t adc_read_filtered(uint8_t channel){
+      | ^
+      | static 
+./adc.h(94): warning: no newline at end of file [-Wnewline-eof]
+   94 |                 
+      |                 ^
+./adc.h(89): warning: no previous prototype for function 'adc_read_Sx' [-Wmissing-prototypes]
+   89 | uint16_t adc_read_Sx(uint8_t sensor){
+      |          ^
+./adc.h(89): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   89 | uint16_t adc_read_Sx(uint8_t sensor){
+      | ^
+      | static 
+main.c(4): warning: In file included from...
+./i2c.h(84): warning: signed shift result (0x80000000) sets the sign bit of the shift expression's type ('int') and becomes negative [-Wshift-sign-overflow]
+   84 |         I2C1->TIMINGR |= (uint32_t)(1<<31);                // prescaler is set as 15 (PRESC=15)
+      |                                     ~^ ~~
+./i2c.h(104): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  104 |         I2C1->TIMINGR &=~ (1<<12);
+      |                       ~~^~~~~~~~~
+./i2c.h(105): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  105 |         I2C1->TIMINGR &=~ (1<<13);
+      |                       ~~^~~~~~~~~
+./i2c.h(106): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  106 |         I2C1->TIMINGR &=~ (1<<14);
+      |                       ~~^~~~~~~~~
+./i2c.h(107): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  107 |         I2C1->TIMINGR &=~ (1<<15);                  // SCLH is set as 7
+      |                       ~~^~~~~~~~~
+./i2c.h(113): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  113 |         I2C1->TIMINGR &=~ (1<<3);
+      |                       ~~^~~~~~~~
+./i2c.h(114): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  114 |         I2C1->TIMINGR &=~ (1<<4);
+      |                       ~~^~~~~~~~
+./i2c.h(115): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  115 |         I2C1->TIMINGR &=~ (1<<5);
+      |                       ~~^~~~~~~~
+./i2c.h(116): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  116 |         I2C1->TIMINGR &=~ (1<<6);
+      |                       ~~^~~~~~~~
+./i2c.h(117): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  117 |         I2C1->TIMINGR &=~ (1<<7);                   // SCLL is set as 7
+      |                       ~~^~~~~~~~
+./i2c.h(140): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  140 |         I2C1->CR2 |=  (val<<I2C_CR2_NBYTES_Pos);
+      |                   ~~   ~~~^~~~~~~~~~~~~~~~~~~~
+./i2c.h(169): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  169 |         I2C1->CR2 |= (I2C.Addr<<1);
+      |                   ~~  ~~~~~~~~^~~
+./i2c.h(237): warning: unused variable 'rx_data' [-Wunused-variable]
+  237 |         uint8_t rx_data=0;
+      |                 ^~~~~~~
+main.c(5): warning: In file included from...
+./soft_i2c.h(37): warning: no newline at end of file [-Wnewline-eof]
+   37 | void     SoftI2C_Init(void);
+      |                             ^
+main.c(6): warning: In file included from...
+./touch.h(9): warning: no newline at end of file [-Wnewline-eof]
+    9 | void touch_count(void);
+      |                        ^
+main.c(11): warning: no previous prototype for function 'emitter_high' [-Wmissing-prototypes]
+   11 | void emitter_high(void){
+      |      ^
+main.c(11): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   11 | void emitter_high(void){
+      | ^
+      | static 
+main.c(30): warning: no previous prototype for function 'delay' [-Wmissing-prototypes]
+   30 | void delay(uint16_t ind){
+      |      ^
+main.c(30): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   30 | void delay(uint16_t ind){
+      | ^
+      | static 
+main.c(57): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   57 |                 uint8_t t_vall=0;
+      |                         ^
+main.c(4): warning: In file included from...
+./i2c.h(9): warning: no previous extern declaration for non-static variable 'I2C' [-Wmissing-variable-declarations]
+    9 | i2c_t I2C;
+      |       ^
+./i2c.h(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+    9 | i2c_t I2C;
+      | ^
+main.c(3): warning: In file included from...
+./adc.h(91): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   91 |         return adc_read_filtered(index[sensor]);
+      |                                  ^~~~~
+main.c(4): warning: In file included from...
+./i2c.h(66): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   66 |         GPIOB->AFR[1] &=~ GPIO_AFRH_AFSEL9_0;
+      |         ^~~~~~~~~~
+C:/Users/Administrator/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include\stm32g030xx.h(632): note: expanded from macro 'GPIOB'
+  632 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                             ^
+main.c(4): warning: In file included from...
+./i2c.h(67): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   67 |         GPIOB->AFR[1] |= GPIO_AFRH_AFSEL9_1;
+      |         ^~~~~~~~~~
+C:/Users/Administrator/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include\stm32g030xx.h(632): note: expanded from macro 'GPIOB'
+  632 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                             ^
+main.c(4): warning: In file included from...
+./i2c.h(68): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   68 |         GPIOB->AFR[1] |= GPIO_AFRH_AFSEL9_2;
+      |         ^~~~~~~~~~
+C:/Users/Administrator/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include\stm32g030xx.h(632): note: expanded from macro 'GPIOB'
+  632 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                             ^
+main.c(4): warning: In file included from...
+./i2c.h(69): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   69 |         GPIOB->AFR[1] &=~ GPIO_AFRH_AFSEL9_3;
+      |         ^~~~~~~~~~
+C:/Users/Administrator/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include\stm32g030xx.h(632): note: expanded from macro 'GPIOB'
+  632 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                             ^
+31 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=2784 RO-data=228 RW-data=0 ZI-data=1640  
+".\Objects\stm32g030_master.axf" - 0 Error(s), 31 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.0.0.pack
+                ARM::CMSIS@6.0.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.0.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32G0xx_DFP.1.5.0.pack
+                Keil::STM32G0xx_DFP@1.5.0
+                STMicroelectronics STM32G0 Series Device Support
+   * Component: Startup Version: 1.4.2
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include
+  C:/Users/Administrator/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.0.0
+
+   * Component: Keil::Device:Startup@1.4.2
+      Source file:   Drivers/CMSIS/Device/ST/STM32G0xx/Source/Templates/arm/startup_stm32g030xx.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h
+      Source file:   MDK/Device/Source/ARM/STM32G0x0_SB_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32G0x0_DB_OPT.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32G0xx/Source/Templates/system_stm32g0xx.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
